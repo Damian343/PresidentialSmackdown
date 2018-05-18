@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dham343.slapthetrump.characterSelection"
+    tools:layout_editor_absoluteY="73dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:background="@drawable/title">
+
+    <com.dham343.slapthetrump.titleTextView
+        android:id="@+id/pager_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="SELECT YOUR PRESIDENT"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:outerShadowRadius="10dp"
+        app:strokeColor="#000000"
+        app:strokeJoinStyle="miter"
+        app:strokeWidth="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/trump"
+        android:layout_marginEnd="104dp" />
+
+    <ImageView
+        android:id="@+id/hillary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/hillaryhdpi"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/trump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/trumphdpi"
+        android:layout_alignBottom="@+id/hillary"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="19dp" />
+
+</RelativeLayout>

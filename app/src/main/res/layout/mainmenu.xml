@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/flag">
+
+    <com.dham343.slapthetrump.titleTextView
+        android:id="@+id/tiletxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="PRESIDENTIAL"
+        android:textColor="#ffffff"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:outerShadowRadius="10dp"
+        app:strokeColor="#000000"
+        app:strokeJoinStyle="miter"
+        app:strokeWidth="2dp"
+        android:layout_above="@+id/titletxt2"
+        android:layout_centerHorizontal="true" />
+
+    <com.dham343.slapthetrump.titleTextView
+        android:id="@+id/titletxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="SMACKDOWN!"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:outerShadowRadius="10dp"
+        app:strokeColor="#000000"
+        app:strokeJoinStyle="miter"
+        app:strokeWidth="2dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/menubtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titletxt2"
+        android:layout_centerHorizontal="true"
+        android:text="START"
+        android:textSize="20dp"
+        android:background="@drawable/buttonborder"
+        android:layout_marginTop="29dp" />
+
+</RelativeLayout>
